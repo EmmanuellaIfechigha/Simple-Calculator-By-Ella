@@ -1,0 +1,141 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: cadetblue;
+}
+
+#calculator{
+    width: 400px;
+    height: 530px;
+    margin: 30px auto;
+    background-color: #000;
+    border-radius: 15px;
+    padding:10px 20px;
+    box-shadow: 0px 0px 15px #000;
+}
+
+#operatorBox{
+    width: 100%;
+    height: 110px;
+    border: none;
+    outline: none;
+    background-color: #b2b2b2;
+    color: #000;
+    text-align: right;
+    font-size: 38px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    border-radius: 10px;
+}
+#operatorBox::placeholder{
+    color: #000;
+}
+i{
+    color: #b2b2b2;
+}
+h6{
+    width: 200px;
+    height: 200px;
+    background-color: #b2b2b2;
+    position: absolute;
+    font-size: 24px;
+}
+
+button{
+    width: 67px;
+    height: 50px;
+    margin: 10px;
+    font-size: 28px;
+    border-radius: 40%;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    font-family:monospace;
+    background-color: #b2b2b2;
+}
+
+#clearButtons{
+    color: red;
+    text-transform: capitalize;
+    font-size: 25px;
+}
+
+#operators{
+    background-color: orange;
+}
+#equal{
+    background-color: rgb(250, 36, 36);          
+}
+
+p:hover{
+    animation-name: fa-flip;
+    animation-delay: var(--fa-animation-delay, 0s);
+    animation-direction: var(--fa-animation-direction, normal);
+    animation-duration: var(--fa-animation-duration, 1s);
+    animation-iteration-count: var(--fa-animation-iteration-count, 1);
+    animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+h4:hover{
+    animation-name: fa-bounce;
+    animation-delay: var(--fa-animation-delay, 0s);
+    animation-direction: var(--fa-animation-direction, normal);
+    animation-duration: var(--fa-animation-duration, 1s);
+    animation-iteration-count: var(--fa-animation-iteration-count, 1);
+    animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+}
+
+h3:hover{
+    animation-name: fa-shake;
+    animation-delay: var(--fa-animation-delay, 0s);
+    animation-direction: var(--fa-animation-direction, normal);
+    animation-duration: var(--fa-animation-duration, 1s);
+    animation-iteration-count: var(--fa-animation-iteration-count, 1);
+    animation-timing-function: var(--fa-animation-timing, linear); 
+
+}
+
+@keyframes fa-flip {
+    50% {
+              transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg)); } }
+
+
+@keyframes fa-bounce {
+  0% {
+            transform: scale(1, 1) translateY(0); }
+  10% {
+            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0); }
+  30% {
+            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1)) translateY(var(--fa-bounce-height, -0.3em)); }
+  50% {
+            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0); }
+  57% {
+            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em)); }
+  64% {
+            transform: scale(1, 1) translateY(0); }
+  100% {
+            transform: scale(1, 1) translateY(0); } 
+        }
+              
+  
+
+@keyframes fa-shake {
+    4% {
+            transform: rotate(15deg); }
+    16% {
+            transform: rotate(-22deg); }
+    20% {
+            transform: rotate(22deg); }
+    32% {
+            transform: rotate(-12deg); }
+    36% {
+            transform: rotate(12deg); }
+    40% {
+            transform: rotate(0deg); }
+      }
